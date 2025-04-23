@@ -1,0 +1,38 @@
+{
+  "name": "hexamap",
+  "version": "1.0.0",
+  "description": "a small library to generate maps using hexagons",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src test",
+    "format": "prettier --write \"{src,test}/**/*.js\"",
+    "test": "jest",
+    "build": "babel src --out-dir lib --copy-files",
+    "prepublishOnly": "npm test && npm run build",
+    "release": "npx semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoorajSNBlaze333/hexamap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SoorajSNBlaze333/hexamap/issues"
+  },
+  "homepage": "https://github.com/SoorajSNBlaze333/hexamap#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.27.0",
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^9.25.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^12.0.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "semantic-release": "^24.2.3"
+  }
+}
